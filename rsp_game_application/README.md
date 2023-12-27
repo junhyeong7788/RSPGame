@@ -4,4 +4,4 @@
 
 ## Application introduce
 
-![[simulator_screenshot_8FFE4AD0-9D09-4BF2-A2C3-950CBCD5C35D.png]]
+![start_image](simulator_screenshot_8FFE4AD0-9D09-4BF2-A2C3-950CBCD5C35D.png)
