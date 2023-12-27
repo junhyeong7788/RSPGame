@@ -4,4 +4,5 @@
 
 ## Application introduce
 
-![start_image](simulator_screenshot_8FFE4AD0-9D09-4BF2-A2C3-950CBCD5C35D.png)
+![start_image](https://github.com/junhyeong7788/RSPGame/assets/114178402/fb251959-47d8-4c45-83ee-2f0685e44d64)
+
