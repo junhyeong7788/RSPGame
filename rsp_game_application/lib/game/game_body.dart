@@ -18,7 +18,7 @@ class _GameBodyState extends State<GameBody> {
   //late는 나중에 값을 할당한다는 의미
   //bool은 true, false를 가지는 자료형
   //result는 게임의 결과를 저장하는 변수
-  late InputType? _userInput;
+  InputType? _userInput; //nullable일 경우에는 앞에 late를 붙여주지 않는다.
   late InputType _cpuInput; //외부로 나갈일이 없어서 _를 붙인다.
 
   @override
@@ -36,7 +36,9 @@ class _GameBodyState extends State<GameBody> {
       children: [
         Expanded(child: CpuInput(isDone: isDone, cpuInput: _cpuInput)),
         Expanded(child: GameResult(isDone: isDone)),
-        Expanded(child: UserInput(isDone: isDone, callback: setUserInput))
+        Expanded(
+            child: UserInput(
+                isDone: isDone, callback: setUserInput, userInput: _userInput))
       ],
     );
   }
