@@ -1,16 +1,7 @@
 # rsp_game_application
 
-A new Flutter project.
+간단한 가위바위보 게임
 
-## Getting Started
+## Application introduce
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![[simulator_screenshot_8FFE4AD0-9D09-4BF2-A2C3-950CBCD5C35D.png]]

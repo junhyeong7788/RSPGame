@@ -20,6 +20,7 @@ class _GameBodyState extends State<GameBody> {
   //result는 게임의 결과를 저장하는 변수
   InputType? _userInput; //nullable일 경우에는 앞에 late를 붙여주지 않는다.
   late InputType _cpuInput; //외부로 나갈일이 없어서 _를 붙인다.
+  //InputType은 enum.dart에 정의되어 있다.
 
   @override
   void initState() {
@@ -59,21 +60,23 @@ class _GameBodyState extends State<GameBody> {
   void setCpuInput() {
     final random = Random();
     _cpuInput = InputType.values[random.nextInt(3)];
-  }
+  } //랜덤으로 cpuInput을 설정한다. 
+  //nextInt(3)은 0, 1, 2 중 하나를 랜덤으로 뽑는다. 
+  ////InputType.values는 InputType의 모든 값을 가져온다.
 
   void reset() {
     setState(() {
       isDone = false;
       setCpuInput();
     });
-  }
+  } //다시하기 버튼을 누르면 결과값을 초기화한다. 
 
-  Result? getResult() {
-    if (_userInput == null) return null;
+  Result? getResult() { 
+    if (_userInput == null) return null; //유저가 값을 설정하지 않았다면 null을 반환한다.
 
-    switch (_userInput!) {
-      case InputType.rock:
-        switch (_cpuInput) {
+    switch (_userInput!) { //switch는 if문과 비슷하다.
+      case InputType.rock: //case는 if문의 else if와 비슷하다.
+        switch (_cpuInput) { 
           case InputType.rock:
             return Result.draw;
           case InputType.scissors:
