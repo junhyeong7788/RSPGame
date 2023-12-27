@@ -21,7 +21,7 @@ class GameResult extends StatelessWidget {
             result!.displayString,
             style: const TextStyle(fontSize: 32),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           TextButton(
             child: const Text(
               '다시하기',
